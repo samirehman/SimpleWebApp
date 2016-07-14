@@ -15,6 +15,14 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("test"), is(""));
     }
 
+
+    @Test
+    public void minus() throws Exception {
+        assertThat(queryProcessor.process("1adae200: what is 9 minus 2"), is("7"));
+    }
+
+
+
     @Test
     public void knowsAboutShakespeare() throws Exception {
         assertThat(queryProcessor.process("Shakespeare"), containsString("playwright"));
