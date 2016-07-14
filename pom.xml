@@ -46,8 +46,8 @@
                     </instrumentation>
                     <check>
                         <!-- Per-Class thresholds -->
-                        <lineRate> 80</lineRate>
-                        <branchRate>80</branchRate>
+                        <lineRate> 70</lineRate>
+                        <branchRate>70</branchRate>
                     </check>
                 </configuration>
             </plugin>
