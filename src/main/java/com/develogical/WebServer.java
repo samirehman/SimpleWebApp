@@ -17,7 +17,7 @@ import java.io.IOException;
 public class WebServer {
 
     public WebServer() throws Exception {
-        Server server = new Server(integer.valueOf(System.getenv("PORT")));
+        Server server = new Server(Integer.valueOf(System.getenv("PORT")));
 
         ServletHandler handler = new ServletHandler();
         handler.addServletWithMapping(new ServletHolder(new Website()), "/*");
