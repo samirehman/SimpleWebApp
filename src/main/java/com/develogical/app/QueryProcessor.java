@@ -24,13 +24,13 @@ public class QueryProcessor {
 
         if (query.toLowerCase().contains("plus")) {
 
-            result = Integer.parseInt(aarray[3]) - Integer.parseInt(aarray[5]) ;
+            result = Integer.parseInt(aarray[3]) + Integer.parseInt(aarray[5]) ;
             return String.valueOf(result);
         }
 
         if (query.toLowerCase().contains("multiplied")) {
 
-            result = Integer.parseInt(aarray[3]) - Integer.parseInt(aarray[5]) ;
+            result = Integer.parseInt(aarray[3]) * Integer.parseInt(aarray[5]) ;
             return String.valueOf(result);
         }
         return "";
