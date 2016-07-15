@@ -18,11 +18,18 @@ public class QueryProcessorTest {
 
     @Test
     public void minus() throws Exception {
-        assertThat(queryProcessor.process("1adae200: what is 9 minus 2"), is("7"));
+        assertThat(queryProcessor.process("74b50d00: what is 9 minus 11"), is("-2"));
     }
 
+    @Test
+    public void plus() throws Exception {
+        assertThat(queryProcessor.process("1adae200: what is 9 plus 2"), is("11"));
+    }
 
-
+    @Test
+    public void multiply() throws Exception {
+        assertThat(queryProcessor.process("1adae200: what is 9 multiplied 2"), is("18"));
+    }
     @Test
     public void knowsAboutShakespeare() throws Exception {
         assertThat(queryProcessor.process("Shakespeare"), containsString("playwright"));
